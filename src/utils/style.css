@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BenzinBold;
+    src: url('../assets/fonts/Benzin-Bold.ttf');
+}
+@font-face {
+    font-family: BenzinMedium;
+    src: url('../assets/fonts/Benzin-Medium.ttf');
+}
+
+:root{
+    --main-color: #4176FA;
+    --dark-grey: #1E1E1E;
+    --light-grey: #F2F2F2;
+    --web_margin: 20px;
+}
+
+h1{
+    font-family: BenzinBold;
+    font-size: 2rem;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 
+    HEADER
+*/
+.header-container{
+    width: 100%;
+}
+/* 
+    Навигационная панель 
+*/
+.nagivation-container{
+    position: relative;
+    color: var(--dark-grey);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: BenzinMedium;
+    font-size: 1rem;
+    min-height: 150px;
+}
+.nagivation-container-list ul{
+    position: relative;
+    list-style-type: disc;
+    height: 100%;
+    display: flex;
+}
+.nagivation-container-list li{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+    ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
+*/
+
+.switch-container{
+    background-color: #1E1E1E;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 25px;
+    border-radius: 500px;   
+}
+
+.switch-container button{
+    cursor: pointer;
+    border: 0;
+    background: var(--light-grey);
+    border-radius: 500px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    height: 21px;
+    width: 21px;
+}
+
+/* 
+    HEADER
+*/
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey);
+    font-family: BenzinBold;
+    width: auto;
+    height: 50vh;
+    background-color: var(--main-color);
+}
+
+/* 
+    TITLE
+*/
+.title-container{
+    background-color: var(--main-color);
+    margin: var(--web_margin);
+    width: 500px;
+    color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.title-container h1{
+    font-size: 1rem;
+}

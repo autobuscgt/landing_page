@@ -1,0 +1,32 @@
+export const soft_skills_cards = [
+    {id:1, name: 'After Effects', image:''},
+    {id:2, name: 'Premiere Pro', image:''},
+    {id:3, name: 'Photoshop', image:''},
+    {id:4, name: 'Illustrator', image:''},
+    {id:5, name: 'Figma', image:''},
+    {id:6, name: 'Blender', image:''},
+    {id:7, name: 'Vegas Pro', image:''},
+    {id:8, name: 'MS Office', image:''},
+    {id:9, name: 'Доски типо Miro', image:''},
+    {id:10, name: 'Могу поставить софт свет и не уебаться об 220 шину', image:''},
+]
+
+export const hard_skills_cards = [
+    {id:1, name: 'HTML', image:''},
+    {id:2, name: 'CSS', image:''},
+    {id:3, name: 'JS', image:''},
+    {id:4, name: 'Node js', image:''},
+    {id:5, name: 'Express', image:''},
+    {id:6, name: 'Postgres / SQLite', image:''},
+    {id:7, name: 'Sequelize', image:''},
+    {id:8, name: 'React js', image:''},
+    {id:9, name: 'Type Script', image:''},
+    {id:10, name: 'Cypress', image:''},
+    {id:11, name: 'Docker', image:''},
+    {id:12, name: 'Kubernetes', image:''},
+    {id:13, name: 'Nginx', image:''},
+    {id:14, name: 'Ubuntu / Debian', image:''},
+    {id:15, name: 'Postman / Insomnia', image:''},
+    {id:16, name: 'Wireshark', image:''},
+    {id:17, name: 'Nmap', image:''},
+]
