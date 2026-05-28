@@ -7,8 +7,7 @@ export const soft_skills_cards = [
     {id:6, name: 'Blender', image:''},
     {id:7, name: 'Vegas Pro', image:''},
     {id:8, name: 'MS Office', image:''},
-    {id:9, name: 'Доски типо Miro', image:''},
-    {id:10, name: 'Могу поставить софт свет и не уебаться об 220 шину', image:''},
+    {id:9, name: 'Miro', image:''},
 ]
 
 export const hard_skills_cards = [

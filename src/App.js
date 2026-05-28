@@ -6,6 +6,8 @@ import clip_icon from './assets/icons/link.svg'
 import pc_icon from './assets/icons/pc.svg'
 import person_icon from './assets/icons/person.svg'
 import Links from "./components/Links";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Title link={pc_icon}>
           Скиллы
         </Title>
+        <Skills/>
       </section>
 
       <section className="main-section">
@@ -38,6 +41,7 @@ function App() {
         <Title>
           Проекты
         </Title>
+        <Projects/>
       </section>
 
 

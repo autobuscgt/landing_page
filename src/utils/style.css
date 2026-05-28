@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     src: url('../assets/fonts/bukhariscript_regular.otf');
 }
 
-:root{
+:root {
     --main-color: #4176FA;
     --dark-grey: #1E1E1E;
     --light-grey: #F2F2F2;
@@ -27,28 +27,28 @@
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     font-family: BenzinBold;
     font-size: 2rem;
 }
 
-.main-container{
+.main-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
 
-.main-section{
-    min-width: 80%;
+.main-section {
+    width: 80%;
 }
 
-.text-container{
+.text-container {
     background-color: var(--light-grey);
     padding: 15px;
 }
 
-.anchors{
+.anchors {
     color: var(--main-color);
     margin-top: var(--web_margin);
     font-size: 3rem;
@@ -57,13 +57,14 @@ h1{
 /* 
     HEADER
 */
-.header-container{
+.header-container {
     width: 100%;
 }
+
 /* 
     Навигационная панель 
 */
-.nagivation-container{
+.nagivation-container {
     position: relative;
     color: var(--dark-grey);
     display: grid;
@@ -72,20 +73,23 @@ h1{
     font-size: 1rem;
     min-height: 150px;
 }
-.nagivation-container-list ul{
+
+.nagivation-container-list ul {
     position: relative;
     list-style-type: disc;
     height: 100%;
     display: flex;
 }
-.nagivation-container-list li{
+
+.nagivation-container-list li {
     flex: 1;
     align-items: center;
     justify-content: center;
     display: flex;
     height: 100%;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,17 +99,17 @@ h1{
     ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
 */
 
-.switch-container{
+.switch-container {
     background-color: #1E1E1E;
     position: absolute;
     bottom: 20px;
     right: 20px;
     width: 75px;
     height: 25px;
-    border-radius: 500px;   
+    border-radius: 500px;
 }
 
-.switch-container button{
+.switch-container button {
     cursor: pointer;
     border: 0;
     background: var(--light-grey);
@@ -116,10 +120,11 @@ h1{
     height: 21px;
     width: 21px;
 }
+
 /* 
     HEADER
 */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +138,7 @@ h1{
 /* 
     TITLE
 */
-.title-container{
+.title-container {
     background-color: var(--main-color);
     /* margin: var(--web_margin) 0px; */
     width: 100%;
@@ -145,11 +150,11 @@ h1{
     position: relative;
 }
 
-.title-container h1{
+.title-container h1 {
     font-size: 1rem;
 }
 
-.title-container img{
+.title-container img {
     position: absolute;
     width: 25px;
     right: 10px;
@@ -159,7 +164,7 @@ h1{
 /* 
     ABOUT ME 
 */
-.about-me-container{
+.about-me-container {
     margin: var(--web_margin) 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -172,7 +177,7 @@ h1{
     LINKS
 */
 
-.links-container{
+.links-container {
     margin: var(--web_margin) 0;
     gap: 25px;
     display: grid;
@@ -182,17 +187,59 @@ h1{
 .link-item-container {
     display: flex;
     flex-direction: row;
+    /* font-size: 1rem; */
     flex: 1;
     border-left: 5px solid var(--main-color);
     margin: var(--web_margin) 0;
+    padding: 10px;
     align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
-.link-item-container p{
+
+.link-item-container p {
+    font-size: 1rem;
     font-family: bukhari;
     align-items: center;
     justify-content: center;
     display: flex;
     flex: 1;
     padding: 0px var(--web_margin);
+}
+
+/* 
+   SKILLS CONTAINER
+*/
+
+.skill-btn{
+    position: relative;
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1rem;    
+    border: 0;
+    border-radius: 600px;
+}
+.skill-btn::before{
+    content: '+';
+    position: absolute;
+    rotate: 45deg;
+    right: 5px;
+}
+.skill-items-container{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.skill-card{
+    width: 300px;
+    height: 300px;
+}
+
+/* PROJECT CONTAINER */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 
